@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="260dp"
+    android:gravity="bottom"
+    android:background="@drawable/edit_text_bottom_border">
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile_image"
+        app:civ_circle_background_color="@color/white"
+        android:background="@color/white"
+        android:layout_width="90dp"
+        android:layout_height="89dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginBottom="15dp"
+        android:src="@drawable/descarga"
+        app:civ_border_color="@color/pink"
+        app:civ_border_width="2dp" />
+
+
+    <TextView
+        android:id="@+id/NombreCompleto_Menulateral"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginBottom="5dp"
+        android:ellipsize="end"
+        android:maxLength="100"
+        android:maxLines="2"
+        android:fontFamily="@font/segoe"
+        android:text="Maria Diaz"
+        android:textColor="@color/black"
+        android:textSize="22sp"></TextView>
+
+
+    <TextView
+        android:id="@+id/Rol_Menulateral"
+        android:layout_width="80dp"
+        android:layout_height="20dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginBottom="30dp"
+        android:text="@string/rol"
+        android:textSize="16sp"></TextView>
+
+
+
+</LinearLayout>

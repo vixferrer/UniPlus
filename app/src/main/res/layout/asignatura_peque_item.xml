@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="0dp"
+    android:layout_marginVertical="4dp"
+    android:layout_marginHorizontal="4dp"
+    cardBackgroundColor="@android:color/white"
+    cardUseCompatPadding="true"
+    app:cardElevation="4dp">
+
+    <LinearLayout
+        android:layout_width="320dp"
+        android:layout_height="62dp"
+        android:layout_marginVertical="3dp"
+        android:layout_marginStart="7dp"
+        android:orientation="horizontal">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imgPerfilAsignatura"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="center"
+            android:background="@color/white"
+            android:src="@drawable/asignatura"
+            app:civ_border_color="@color/pink"
+            app:civ_border_width="1dp"
+            app:civ_circle_background_color="@color/white" />
+
+        <TextView
+            android:id="@+id/nombreAsignatura"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:ellipsize="end"
+            android:maxLength="100"
+            android:maxLines="2"
+            android:layout_marginStart="12dp"
+            android:layout_marginEnd="2dp"
+            android:fontFamily="@font/segoe"
+            android:text="Machine Learning"
+            android:textColor="@color/black"
+            android:textSize="15sp"></TextView>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

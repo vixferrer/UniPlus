@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    cardBackgroundColor="@android:color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginVertical="4dp"
+        android:orientation="horizontal">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imgUsuario"
+            android:layout_width="46dp"
+            android:layout_height="46dp"
+            android:layout_marginLeft="14dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/blank_profile"
+            app:civ_border_color="@color/pink"
+            app:civ_border_width="1dp"
+            app:civ_circle_background_color="@color/white" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/puntuador"
+                style="@style/Widget.MaterialComponents.Button.TextButton"
+                android:layout_width="240dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="2dp"
+                android:maxLength="42"
+                android:minHeight="10dip"
+                android:insetTop="0dp"
+                android:insetBottom="0dp"
+                android:padding="0dp"
+                android:singleLine="true"
+                android:text="Victoria Ferrer Epariag"
+                android:textAlignment="viewStart"
+                android:textAllCaps="false"
+                android:textColor="@color/pink"
+                android:textSize="15dp"></Button>
+
+
+            <Button
+                android:id="@+id/idDocumento"
+                style="@style/Widget.MaterialComponents.Button.TextButton"
+                android:layout_width="240dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="2sp"
+                android:minHeight="10dip"
+                android:padding="1dp"
+                android:maxLength="42"
+                android:singleLine="true"
+                android:text="Ingeniería del proceso software y construccion"
+                android:textAlignment="textStart"
+                android:insetTop="0dp"
+                android:insetBottom="0dp"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:textSize="15dp"></Button>
+
+            </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="2dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/bUnirUsuario"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                app:backgroundTint="@null"
+                android:layout_gravity="center_vertical"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_marginLeft="3dp"
+                android:background="@drawable/ic_check"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView14" />
+
+            <Button
+                android:id="@+id/bOmitirUsuario"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                app:backgroundTint="@null"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/ic_cancelar"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView14" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

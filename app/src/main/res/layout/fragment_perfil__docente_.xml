@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout3"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Perfil_Docente_Fragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="342dp"
+        android:layout_height="300dp"
+        android:background="@drawable/edit_text_bottom_border_grey"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imgPerfil"
+            android:layout_width="147dp"
+            android:layout_height="127dp"
+            android:layout_marginTop="68dp"
+            android:background="@color/white"
+            app:civ_border_color="@color/pink"
+            app:civ_border_width="2dp"
+            app:civ_circle_background_color="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.502"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/NombreCompleto_Perfil"
+            android:layout_width="264dp"
+            android:layout_height="23dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/segoe"
+            android:text=""
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="22sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imgPerfil"></TextView>
+
+        <TextView
+            android:id="@+id/Rol_Perfil"
+            android:layout_width="111dp"
+            android:layout_height="21dp"
+            android:layout_marginTop="4dp"
+            android:text="@string/rol"
+            android:textAlignment="center"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.502"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/NombreCompleto_Perfil"></TextView>
+
+        <TextView
+            android:id="@+id/TextViewEmail"
+            android:layout_width="184dp"
+            android:layout_height="26dp"
+            android:layout_marginTop="4dp"
+            android:text="email"
+            android:textAlignment="center"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Rol_Perfil"></TextView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/TextoAsignaturas"
+        android:layout_width="wrap_content"
+        android:layout_height="29dp"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/segoe"
+        android:text="Asignaturas en las que participo:"
+        android:textColor="@color/black"
+        android:textSize="17sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.255"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout"></TextView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/lista_asignaturas"
+        android:layout_width="wrap_content"
+        android:layout_height="316dp"
+        android:scrollbars="vertical"
+        android:scrollbarStyle="insideInset"
+        android:nestedScrollingEnabled="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TextoAsignaturas"
+        app:layout_constraintVertical_bias="0.0"
+        tools:listitem="@layout/asignatura_peque_item" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

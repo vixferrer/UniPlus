@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout7"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NuevaAsignatura">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile_imageNuevaAsig"
+        android:layout_width="86dp"
+        android:layout_height="78dp"
+        android:layout_marginTop="72dp"
+        android:background="@color/white"
+        android:src="@drawable/asignatura"
+        app:civ_border_color="@color/pink"
+        app:civ_border_width="2dp"
+        app:civ_circle_background_color="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.181"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/bElegirFotoAsignatura"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="166dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="88dp"
+        android:drawableLeft="@drawable/ic_edit"
+        android:fontFamily="@font/segoe"
+        android:text="Elegir foto"
+        android:textAllCaps="false"
+        android:textColor="@color/grey"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.19"
+        app:layout_constraintStart_toEndOf="@+id/profile_imageNuevaAsig"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvNombreAsignatura"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="56dp"
+        android:text="Nombre Asignatura"
+        android:textColor="@color/grey"
+        android:background="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/editTextNombreAsignatura"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.204"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextNombreAsignatura"
+        android:layout_width="342dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="44dp"
+        android:background="@drawable/edit_text_bottom_border_pink"
+        android:ems="10"
+        android:padding="8sp"
+        android:textColor="@color/black"
+        android:textColorHighlight="@color/grey"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profile_imageNuevaAsig" />
+
+    <SearchView
+        android:id="@+id/searchView"
+        android:layout_width="342dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="284dp"
+        android:background="@drawable/edit_text_bottom_border_pink"
+        android:iconifiedByDefault="false"
+        android:inputType="textCapWords"
+        android:queryHint="María ..."
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"></SearchView>
+
+    <TextView
+        android:id="@+id/tvIntegrantes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="44dp"
+        android:text="Integrantes"
+        android:background="@color/white"
+        android:textColor="@color/grey"
+        app:layout_constraintBottom_toBottomOf="@+id/searchView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.173"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/bGuardarAsignatura"
+        style="@style/Theme.TFG.FloatingActionButton"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="344dp"
+        android:src="@drawable/ic_save"
+        app:fabCustomSize="60dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.806"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.825" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/userlist"
+        android:layout_width="wrap_content"
+        android:scrollbars="vertical"
+        android:scrollbarStyle="insideInset"
+        android:layout_height="287dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/searchView"
+        tools:listitem="@layout/user_item" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

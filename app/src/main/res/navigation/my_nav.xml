@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_nav"
+    app:startDestination="@id/home_Docente_Fragment">
+
+    <fragment
+        android:id="@+id/home_Docente_Fragment"
+        android:name="com.example.tfg.Home_Docente_Fragment"
+        android:label="Inicio"
+        tools:layout="@layout/fragment_home_docente" />
+    <fragment
+        android:id="@+id/busqueda_Docente_Fragment"
+        android:name="com.example.tfg.Busqueda_Docente_Fragment"
+        android:label="Búsqueda"
+        tools:layout="@layout/fragment_busqueda__docente_" />
+    <fragment
+        android:id="@+id/perfil_Docente_Fragment"
+        android:name="com.example.tfg.Perfil_Docente_Fragment"
+        android:label="Perfil"
+        tools:layout="@layout/fragment_perfil__docente_" />
+    <fragment
+        android:id="@+id/ajustes_Docente_Fragment"
+        android:name="com.example.tfg.Ajustes_Docente_Fragment"
+        android:label="Ajustes"
+        tools:layout="@layout/fragment_ajustes_docente" />
+    <fragment
+        android:id="@+id/asignaturasDocente"
+        android:name="com.example.tfg.AsignaturasDocente"
+        android:label="fragment_asignaturas_docente"
+        tools:layout="@layout/fragment_asignaturas_docente" />
+    <fragment
+        android:id="@+id/competencias_Docente_Fragment"
+        android:name="com.example.tfg.competencias_Docente_Fragment"
+        android:label="fragment_competencias_docente"
+        tools:layout="@layout/fragment_competencias_docente" />
+    <fragment
+        android:id="@+id/nuevaAsignatura"
+        android:name="com.example.tfg.NuevaAsignatura"
+        android:label="fragment_nueva_asignatura"
+        tools:layout="@layout/fragment_nueva_asignatura" />
+    <fragment
+        android:id="@+id/perfil_Asignatura_Fragment"
+        android:name="com.example.tfg.Perfil_Asignatura_Fragment"
+        android:label="fragment_perfil_asignatura"
+        tools:layout="@layout/fragment_perfil_asignatura" />
+    <fragment
+        android:id="@+id/editarAsignatura"
+        android:name="com.example.tfg.EditarAsignatura"
+        android:label="fragment_editar_asignatura"
+        tools:layout="@layout/fragment_editar_asignatura" />
+    <fragment
+        android:id="@+id/nuevoGrupoFragment"
+        android:name="com.example.tfg.NuevoGrupoFragment"
+        android:label="fragment_nuevo_grupo"
+        tools:layout="@layout/fragment_nuevo_grupo" />
+    <fragment
+        android:id="@+id/perfil_Grupo_Fragment"
+        android:name="com.example.tfg.Perfil_Grupo_Fragment"
+        android:label="fragment_perfil__grupo"
+        tools:layout="@layout/fragment_perfil__grupo" />
+    <fragment
+        android:id="@+id/nuevaCompetencia"
+        android:name="com.example.tfg.NuevaCompetencia"
+        android:label="fragment_nueva_competencia"
+        tools:layout="@layout/fragment_nueva_competencia" />
+    <fragment
+        android:id="@+id/editarGrupo"
+        android:name="com.example.tfg.EditarGrupo"
+        android:label="fragment_editar_grupo"
+        tools:layout="@layout/fragment_editar_grupo" />
+    <fragment
+        android:id="@+id/perfil_Competencia_Fragment"
+        android:name="com.example.tfg.Perfil_Competencia_Fragment"
+        android:label="fragment_perfil_competencia"
+        tools:layout="@layout/fragment_perfil_competencia" />
+    <fragment
+        android:id="@+id/editarCompetencia"
+        android:name="com.example.tfg.EditarCompetencia"
+        android:label="fragment_editar_competencia"
+        tools:layout="@layout/fragment_editar_competencia" />
+    <fragment
+        android:id="@+id/gruposEstudianteFragment"
+        android:name="com.example.tfg.GruposEstudianteFragment"
+        android:label="fragment_grupos_estudiante"
+        tools:layout="@layout/fragment_grupos_estudiante" />
+</navigation>

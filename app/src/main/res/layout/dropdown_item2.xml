@@ -1,0 +1,23 @@
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="325dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/grey"
+        android:text="TextView"
+        android:ellipsize="end"
+        android:maxLength="40"
+        android:padding="8dp"
+        android:textSize="17sp"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <CheckBox
+            android:id="@+id/cbSeleccionarAsignatura"
+            android:layout_width="25dp"
+            android:layout_height="26dp"
+            android:layout_marginTop="11dp"
+            android:layout_marginRight="10dp"
+            android:buttonTint="@color/pink"
+            android:text="CheckBox">
+        </CheckBox>
+
+    </TextView>

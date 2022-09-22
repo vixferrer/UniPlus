@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout16"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditarGrupo">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile_imageGrupo"
+        android:layout_width="86dp"
+        android:layout_height="78dp"
+        android:layout_marginTop="72dp"
+        android:background="@color/white"
+        android:src="@drawable/asignatura"
+        app:civ_border_color="@color/pink"
+        app:civ_border_width="2dp"
+        app:civ_circle_background_color="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <Button
+        android:id="@+id/bCambiarFotoGrupo"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="166dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="88dp"
+        android:drawableLeft="@drawable/ic_edit"
+        android:fontFamily="@font/segoe"
+        android:text="Cambiar foto"
+        android:textAllCaps="false"
+        android:textColor="@color/grey"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.074"
+        app:layout_constraintStart_toEndOf="@+id/profile_imageGrupo"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextNombreGrupo"
+        android:layout_width="342dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/edit_text_bottom_border_pink"
+        android:ems="10"
+        android:padding="8sp"
+        android:textColor="@color/black"
+        android:textColorHighlight="@color/grey"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profile_imageGrupo" />
+
+    <SearchView
+        android:id="@+id/searchViewIntegrantes"
+        android:layout_width="342dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="280dp"
+        android:inputType="textCapWords"
+        android:background="@drawable/edit_text_bottom_border_pink"
+        android:iconifiedByDefault="false"
+        android:queryHint="María ..."
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"></SearchView>
+
+    <TextView
+        android:id="@+id/tvIntegrantes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="44dp"
+        android:background="@color/white"
+        android:text="Integrantes"
+        android:textColor="@color/grey"
+        app:layout_constraintBottom_toBottomOf="@+id/searchViewIntegrantes"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.173"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tvNombreGrupo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="56dp"
+        android:background="@color/white"
+        android:text="Nombre Grupo"
+        android:textColor="@color/grey"
+        app:layout_constraintBottom_toBottomOf="@+id/editTextNombreGrupo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.184"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/bGuardarGrupo"
+        style="@style/Theme.TFG.FloatingActionButton"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/ic_save"
+        app:fabCustomSize="60dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.84"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/userlist"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/userlist"
+        android:layout_width="wrap_content"
+        android:scrollbars="vertical"
+        android:scrollbarStyle="insideInset"
+        android:layout_height="260dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/searchViewIntegrantes"
+        tools:listitem="@layout/user_item" />
+
+    <Button
+        android:id="@+id/bEliminarGrupo"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="wrap_content"
+        android:layout_height="39dp"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="70dp"
+        android:text="Eliminar grupo"
+        android:textAllCaps="false"
+        android:textColor="@color/pink"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.439"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/userlist"
+        app:layout_constraintVertical_bias="1.0" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

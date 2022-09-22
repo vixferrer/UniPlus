@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+    <item
+        android:id="@+id/home_Docente_Fragment"
+        android:title="Inicio"
+        android:icon="@drawable/ic_home"
+        android:enabled="true"/>
+
+    <item
+        android:id="@+id/busqueda_Docente_Fragment"
+        android:title="Busqueda"
+        android:icon="@drawable/ic_search"
+        android:enabled="true"/>
+
+    <item
+        android:id="@+id/perfil_Docente_Fragment"
+        android:title="Perfil"
+        android:icon="@drawable/ic_person"
+        android:enabled="true"/>
+    </group>
+</menu>

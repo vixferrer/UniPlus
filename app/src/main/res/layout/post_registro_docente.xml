@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textViewFotoPerfil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="68dp"
+        android:fontFamily="@font/segoe"
+        android:text="Foto de perfil:"
+        android:textColor="#F85F6A"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.139"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile_image"
+        app:civ_circle_background_color="@color/white"
+        android:background="@color/white"
+        android:layout_width="104dp"
+        android:layout_height="107dp"
+        android:layout_marginTop="28dp"
+        android:src="@drawable/blank_profile"
+        app:civ_border_color="@color/pink"
+        app:civ_border_width="2dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewFotoPerfil" />
+
+    <Button
+        android:id="@+id/bElegirFoto"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="170dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="12dp"
+        android:drawableLeft="@android:drawable/ic_menu_gallery"
+        android:fontFamily="@font/segoe"
+        android:text="Elegir archivo"
+        android:textAllCaps="false"
+        android:textColor="@color/grey"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profile_image" />
+
+    <EditText
+        android:id="@+id/editTextNombreCompleto"
+        android:layout_width="291dp"
+        android:layout_height="34dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/edit_text_bottom_border"
+        android:ems="10"
+        android:textColor="@color/black"
+        android:textColorHighlight="@color/grey"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.333"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:fontFamily="@font/segoe"
+        android:text="Nombre y apellidos:"
+        android:textColor="#F85F6A"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.172"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bElegirFoto" />
+
+    <Button
+        android:id="@+id/bContinuarHome"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="164dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/custom_button"
+        android:fontFamily="@font/segoe"
+        android:text="Continuar"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNombreCompleto" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

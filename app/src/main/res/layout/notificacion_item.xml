@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginVertical="1dp"
+    cardBackgroundColor="@android:color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="9dp"
+        android:orientation="horizontal">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imgUsuario"
+            android:layout_width="49dp"
+            android:layout_height="49dp"
+            android:layout_marginLeft="12dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/blank_profile"
+            app:civ_border_color="@color/pink"
+            app:civ_border_width="1dp"
+            app:civ_circle_background_color="@color/white" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:padding="0dp"
+            android:minHeight="20dp"
+            android:layout_gravity="center_vertical"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="0dp"
+                android:minHeight="20dp"
+                android:layout_marginTop="3sp"
+                android:layout_marginLeft="8dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/puntuador"
+                    style="@style/Widget.MaterialComponents.Button.TextButton"
+                    android:layout_width="210dp"
+                    android:layout_height="wrap_content"
+                    android:padding="0dp"
+                    android:minHeight="10dp"
+                    android:maxLength="42"
+                    android:singleLine="true"
+                    android:text="Victoria Ferrer Epariag probando"
+                    android:textAlignment="viewStart"
+                    android:textAllCaps="false"
+                    android:textColor="@color/pink"
+                    android:insetTop="0dp"
+                    android:insetBottom="0dp"
+                    android:textSize="15dp"></Button>
+
+                <TextView
+                    android:id="@+id/hora"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minHeight="10dip"
+                    android:layout_marginLeft="55dp"
+                    android:text="11:52"></TextView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="0dp"
+                android:minHeight="0dip"
+                android:layout_marginTop="2sp"
+                android:layout_marginLeft="8dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textoNotifi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/segoe"
+                    android:padding="0dp"
+                    android:minHeight="10dp"
+                    android:text="te añadió a"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"></TextView>
+
+                <Button
+                    android:id="@+id/idCompetencia"
+                    style="@style/Widget.MaterialComponents.Button.TextButton"
+                    android:layout_width="190dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="6dp"
+                    android:layout_marginBottom="5dp"
+                    android:maxLength="24"
+                    android:padding="0dp"
+                    android:insetTop="0dp"
+                    android:insetBottom="0dp"
+                    android:minHeight="10dp"
+                    android:singleLine="true"
+                    android:textAlignment="viewStart"
+                    android:textAllCaps="false"
+                    android:textColor="@color/pink"
+                    android:textSize="15dp"
+                    android:text="Ingenieria de proceso gtASd"></Button>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
